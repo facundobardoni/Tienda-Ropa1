@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  top: 0%;
+  height: 20vh;
+  width: 100%;
+  margin-top: 0;
+  background-color: white;
+}
+
+nav {
+  height: 130vh;
+}
+
+nav,
+.navigation li {
+  text-align: center;
+  display: inline;
+}
+
+.navButtons {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-family: "Bodoni Moda", serif;
+  text-decoration: none;
+  margin: auto 5%;
+}
+
+.navButtons:hover {
+  background-color: rgb(217, 215, 241);
+}
+.navigation {
+  list-style: none;
+  width: 50%;
+  margin: auto;
+  padding-top: 0.5%;
+}
+
+.navigationLi {
+  text-decoration: none;
+}
+.imagenPrincipal {
+  width: 100vw;
+}
+
+.formularioprin {
+  background-color: rgb(217, 215, 241);
+  width: 400px;
+  margin: auto;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+  margin-top: 2%;
+}
+.formdos {
+  background-color: white;
+  border-radius: 3px;
+  color: #999;
+  font-size: 0.8em;
+  padding: 20px;
+  margin: 0 auto;
+  width: 300px;
+}
+
+.formdos {
+  border: 0;
+  outline: none;
+
+  width: 280px;
+}
+
+.formdos {
+  border: solid 1px #ccc;
+  padding: 10px;
+}
+
+.formdos:focus {
+  border-color: #18a383;
+}
+
+.center-content {
+  text-align: center;
+}
+
+.pijama-zafora-title {
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  background-color: rgb(217, 215, 241);
+}
+
+.flex-container {
+  margin-top: 4%;
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+
+}
+
+.galeria-pijamas-1 {
+  display: block;
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+}
+
+.flex-container::-webkit-scrollbar {
+  
+  width: 100vw; /* width of the entire scrollbar */
+}
+
+.flex-container::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.flex-container::-webkit-scrollbar-thumb {
+  background-color: rgb(217, 215, 241); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.pijama-japon-title {
+  width: 100vw;
+  margin-top: 50px;
+  text-align: center;
+  font-family: "Bodoni Moda", serif;
+  background-color: rgb(217, 215, 241);
+}
+
+.galeria-largos {
+  display: flex;
+  overflow-x: scroll;
+  margin: auto;
+  width: 100vw;
+}
+
+.pijama-japon {
+  display: block;
+  width: 100vw;
+  height: 500px;
+  object-fit: cover;
+}
+
+.galeria-largos::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+.galeria-largos::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.galeria-largos::-webkit-scrollbar-thumb {
+  background-color: rgb(217, 215, 241); /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+.OfeNoticias {
+  background-color: rgb(217, 215, 241);
+  width: 400px;
+  margin: auto;
+  font-family: "Bodoni Moda", serif;
+  text-align: center;
+}
+.textoEmail {
+  background-color: rgb(217, 215, 241);
+  width: 400px;
+  margin: auto;
+  font-family: "Bodoni Moda", serif;
+  font-style: unset;
+  text-align: center;
+}
+
+.footer{
+
+  background-color: rgb(217, 215, 241);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+
+
+}
+.footer-list{
+  display: flex;
+  list-style: none;
+
+  width: 100vw;
+  ;
+}
+
+footer ul li {
+  font-size: 1 rem;
+  margin-left: 20%;
+}
+
+footer ul li a {
+  color: burlywood;
+}
+
+footer ul li a :hover {
+  color: rgb(217, 215, 241);
+}
+
+.header{
+  grid-area: header;
+
+
+}
+.navbar{
+  grid-area: navbar;
+
+
+}
+.imagenPrincipal{
+  grid-area: imagenPrincipal;
+}
+.footer{
+  grid-area: footer;
+
+}
+.navigation{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.grid-conteiner{
+  display: grid;
+  gap: 10px;
+  grid-template: 
+  "header"100px
+  "navbar"100px 
+  "imagenPrincipal"100px
+  "footer"100px
+  ;  
+}
+
+@media(min-width:900px) {
+  .grid-conteiner{
+
+grid-template :
+"header " 100px
+"navbar" 50px
+"imagenPrincipal"auto
+"footer" 100px
+  }
+}
+
+@media(min-width:600px) {
+  .grid-conteiner{
+
+grid-template :
+"header " 100px
+"navbar" 50px
+"imagenPrincipal"auto
+"footer" 100px
+  }
+}
