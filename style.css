@@ -94,9 +94,7 @@ nav,
   margin-top: 4%;
   width: 100vw;
   display: flex;
-  overflow-x: scroll;
-
-}
+  overflow-x: scroll;}
 
 .galeria-pijamas-1 {
   display: block;
@@ -106,9 +104,7 @@ nav,
 }
 
 .flex-container::-webkit-scrollbar {
-  
-  width: 100vw; /* width of the entire scrollbar */
-}
+  width: 100vw; /* width of the entire scrollbar */}
 
 .flex-container::-webkit-scrollbar-track {
   background: transparent; /* color of the tracking area */
@@ -166,27 +162,20 @@ nav,
   width: 400px;
   margin: auto;
   font-family: "Bodoni Moda", serif;
-  font-style: unset;
+  font-style: unset;}
 
-}
-
-.footer{
-
+.footer {
   background-color: rgb(217, 215, 241);
   display: flex;
   justify-content: space-around;
   padding: 1rem;
-  margin: 30px ;
-
-
+  margin: 30px;
 }
-.footer-list{
+.footer-list {
   display: flex;
   list-style: none;
 
-  width: 100vw;
-  ;
-}
+ width: 100vw;}
 
 footer ul li {
   font-size: 1 rem;
@@ -201,58 +190,45 @@ footer ul li a :hover {
   color: rgb(217, 215, 241);
 }
 
-.header{
-  grid-area: header;
-
-
-}
-.navbar{
-  grid-area: navbar;
-
-
-}
-.imagenPrincipal{
+.header {
+  grid-area: header;}
+.navbar {
+  grid-area: navbar;}
+.imagenPrincipal {
   grid-area: imagenPrincipal;
 }
-.footer{
-  grid-area: footer;
-
-}
-.navigation{
+.footer {
+  grid-area: footer;}
+.navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between;}
 
-}
-
-.grid-conteiner{
+.grid-conteiner {
   display: grid;
   gap: 10px;
-  grid-template: 
-  "header"100px
-  "navbar"100px 
-  "imagenPrincipal"100px
-  "footer"100px
-  ;  
+  grid-template:
+    "header" 100px
+    "navbar" 100px
+    "imagenPrincipal" 100px
+    "footer" 100px;
 }
 
-@media(min-width:900px) {
-  .grid-conteiner{
-
-grid-template :
-"header " 100px
-"navbar" 50px
-"imagenPrincipal"auto
-"footer" 100px
+@media (min-width: 900px) {
+  .grid-conteiner {
+    grid-template:
+      "header " 100px
+      "navbar" 50px
+      "imagenPrincipal" auto
+      "footer" 100px;
   }
 }
 
-@media(min-width:600px) {
-  .grid-conteiner{
-
-grid-template :
-"header " 100px
-"navbar" 50px
-"imagenPrincipal"auto
-"footer" 100px
+@media (min-width: 600px) {
+  .grid-conteiner {
+    grid-template:
+      "header " 100px
+      "navbar" 50px
+      "imagenPrincipal" auto
+      "footer" 100px;
   }
 }
