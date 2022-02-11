@@ -1,0 +1,12 @@
+body {
+  background-color: white; }
+
+.imagenPrincipal {
+  width: 100vw; }
+
+.footer {
+  background-color: #d9d7f1;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  margin: 30px; }
