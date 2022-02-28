@@ -26,7 +26,7 @@ nav,
     color: black;
     font-family: "Bodoni Moda", serif;
     text-decoration: none;
-    margin: auto 5%;
+    margin: auto 50% ;
 }
 
 .navButtons:hover {
@@ -48,13 +48,49 @@ nav,
     width: 100vw;
 }
 
+.contactomenu{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+}
+
+    form{
+        display: flex;
+        flex-flow: column;
+        background-color: rgb(217, 215, 241) ;
+        width: 40%;
+        height: 80%;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: rgba(0,0,0,0.8) 0px 0px 50px;
+        border-radius: 10px;
+    }
+    
+    input, textarea{
+        border: none;
+        resize: none;
+        outline: none;
+        padding: 15px 0px;
+        width: 80%;
+        margin: 20px;
+        transition: all 300ms;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    
+    input:focus, textarea:focus{
+        border-bottom-color: #610061 ;
+    }
+
+
 .formularioprin {
-    background-color: rgb(217, 215, 241);
-    width: 400px;
-    margin: auto;
-    font-family: "Bodoni Moda", serif;
-    text-align: center;
-    margin-top: 2%;
+ width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+
 }
 
 .formdos {
@@ -98,6 +134,7 @@ nav,
     display: flex;
     overflow-x: scroll;
 }
+
 
 .galeria-pijamas-1 {
     display: block;
@@ -198,16 +235,60 @@ footer ul li {
 }
 
 footer ul li a {
-    color: burlywood;
+    color: blanchedalmond
 }
 
 footer ul li a :hover {
-    color: rgb(217, 215, 241);
+    color: white
 }
 
 .header {
     grid-area: header;
 }
+.boton0{
+    display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: rgb(217, 215, 241);
+	border: 1px solid rgb(217, 215, 241);
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    background-color: white;
+
+}
+.boton12{
+
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+    margin-left: 50%;
+	text-decoration: none;
+	color: rgb(217, 215, 241);
+	border: 1px solid rgb(217, 215, 241);
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+    background-color: white;
+
+    
+    
+    
+    
+}
+.barrainicio{    
+    text-align: center;
+    font-family: "Bodoni Moda", serif;
+    background-color: rgb(217, 215, 241);
+
+}
+.boton12:hover{
+	background: rgb(217, 215, 241);
+	color: #fff;
+    
+}
+
 
 .navbar {
     grid-area: navbar;
@@ -243,3 +324,82 @@ footer ul li a :hover {
         grid-template: "header " 100px "navbar" 50px "imagenPrincipal" auto "footer" 100px;
     }
 }
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/*tarjetas-inicio*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+
+
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgb(217, 215, 241);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgb(217, 215, 241);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: rgb(217, 215, 241);
+	border: 1px solid rgb(217, 215, 241);
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: rgb(217, 215, 241);
+	color: #fff;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+	.container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+}
+/*tarjetas-final*/
