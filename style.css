@@ -4,10 +4,10 @@
 }
 
 
-nav,
+nav
 
 
-navigation li {
+.navigation li {
     text-align: center;
     display: inline;
 }
@@ -17,8 +17,20 @@ navigation li {
     color: black;
     font-family: "Bodoni Moda", serif;
     text-decoration: none;
-    margin: auto 50% ;
+    margin: 0.3rem ;
+
+    
 }
+
+
+
+   @media (max-width:425px ) {
+    .navigation .navButtons .navigation li {
+     margin: 0.3em ;
+     
+     
+    }
+    }
 
 .navButtons:hover {
     background-color: rgb(217, 215, 241);
@@ -26,14 +38,11 @@ navigation li {
 
 .navigation {
     list-style: none;
-    width: 50%;
     margin: auto;
     padding-top: 0.5%;
+ 
 }
 
-.navigationLi {
-    text-decoration: none;
-}
 
 .imagenPrincipal {
     width: 100vw;
