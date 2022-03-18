@@ -3,9 +3,7 @@
     padding: 0;
 }
 
-
 nav
-
 
 .navigation li {
     text-align: center;
@@ -31,7 +29,6 @@ nav
      
     }
     }
-
 .navButtons:hover {
     background-color: rgb(217, 215, 241);
 }
