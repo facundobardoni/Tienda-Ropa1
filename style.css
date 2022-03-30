@@ -3,6 +3,8 @@
     padding: 0;
 }
 
+
+
 nav
 
 .navigation li {
@@ -20,15 +22,10 @@ nav
     
 }
 
+.logo2{
+    width: 300px;
+}
 
-
-   @media (max-width:425px ) {
-    .navigation .navButtons .navigation li {
-     margin: 0.3em ;
-     
-     
-    }
-    }
 .navButtons:hover {
     background-color: rgb(217, 215, 241);
 }
@@ -400,3 +397,4 @@ footer ul li a :hover {
 	}
 }
 /*tarjetas-final*/
+
